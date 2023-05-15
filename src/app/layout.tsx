@@ -1,7 +1,12 @@
 import Home from "@/app/page";
+import React from "react";
 
-export default function App() {
+interface AppProps {
+    children: React.ReactNode
+}
+
+export default function App({ children }: AppProps) {
     return <html><body>
-        <Home/>
+        {children}
     </body></html>;
 }
