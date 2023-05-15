@@ -1,11 +1,10 @@
-import Home from "@/app/page";
-import React from "react";
+import {ReactElement} from "react";
 
 interface AppProps {
-    children: React.ReactNode
+    children: ReactElement
 }
 
-export default function App({ children }: AppProps) {
+export default function App({ children }: AppProps): ReactElement {
     return <html><body>
         {children}
     </body></html>;
