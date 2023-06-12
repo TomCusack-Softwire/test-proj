@@ -2,8 +2,8 @@ name: Lint
 on:
   pull_request
 jobs:
-  linting:
-    name: Linting
+  checks:
+    name: Checks
     runs-on: ubuntu-latest
     steps:
       - name: Checkout this repo
@@ -17,3 +17,6 @@ jobs:
 
       - name: Run lint
         run: npm run lint
+
+      - name: Run tests
+        run: npm run test

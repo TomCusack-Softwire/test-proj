@@ -10,8 +10,14 @@ add `lint --fix` command
 
 add lint github action
 
+`npm install --save-dev jest @testing-library/react @testing-library/jest-dom ts-node`
+
+`jest --init`
+
 ## What you need to run
 
 `npm install`
 
 `npm run dev`
+
+`npm run test`
