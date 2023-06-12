@@ -7,3 +7,7 @@
 test("that true remains in tact", () => {
     expect(true).toBe(true);
 });
+
+test("something fails", () => {
+    expect(true).toBe(false);
+})
